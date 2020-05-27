@@ -1,0 +1,4 @@
+FROM ubuntu:18.04
+COPY script.sh /script.sh
+VOLUME /text
+ENTRYPOINT ./script.sh
