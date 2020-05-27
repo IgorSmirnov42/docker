@@ -2,6 +2,6 @@
 
 while true
 do
-	cat text/text.txt
+	bash /script/script.sh
     sleep 5
 done
