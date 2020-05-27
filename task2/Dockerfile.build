@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+RUN apt-get update -y && apt-get -y install python3
+RUN apt-get update -y && apt-get -y install python3-pip
+COPY server.py /server.py
+RUN pip3 install Flask
+ENTRYPOINT /usr/bin/python3 server.py
